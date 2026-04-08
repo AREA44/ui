@@ -1,13 +1,14 @@
-import { Button } from "@/examples/radix/ui/button"
-import { ButtonGroup } from "@/examples/radix/ui/button-group"
+import { BotIcon, ChevronDownIcon } from "lucide-react"
+
+import { Button } from "@/styles/radix-nova/ui/button"
+import { ButtonGroup } from "@/styles/radix-nova/ui/button-group"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/examples/radix/ui/popover"
-import { Separator } from "@/examples/radix/ui/separator"
-import { Textarea } from "@/examples/radix/ui/textarea"
-import { BotIcon, ChevronDownIcon } from "lucide-react"
+} from "@/styles/radix-nova/ui/popover"
+import { Separator } from "@/styles/radix-nova/ui/separator"
+import { Textarea } from "@/styles/radix-nova/ui/textarea"
 
 export function ButtonGroupPopover() {
   return (
@@ -21,7 +22,7 @@ export function ButtonGroupPopover() {
             <ChevronDownIcon />
           </Button>
         </PopoverTrigger>
-        <PopoverContent align="end" className="rounded-xl p-0 text-sm">
+        <PopoverContent align="end" className="gap-0 rounded-xl p-0 text-sm">
           <div className="px-4 py-3">
             <div className="text-sm font-medium">Agent Tasks</div>
           </div>
