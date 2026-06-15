@@ -29,9 +29,6 @@ const nextConfig = {
   turbopack: {
     root: path.resolve(import.meta.dirname, "../.."),
   },
-  experimental: {
-    turbopackFileSystemCacheForDev: true,
-  },
   redirects() {
     return [
       // Form redirects to /docs/forms.
@@ -131,6 +128,12 @@ const nextConfig = {
         source: "/themes",
         destination: "/create",
         permanent: true,
+      },
+      {
+        source: "/code/:path*",
+        destination:
+          "https://raw.githubusercontent.com/shadcn-ui/ui/refs/heads/main/:path*",
+        permanent: false,
       },
     ]
   },
